@@ -1,6 +1,7 @@
 name: portfolio
 on:
-  push: [main]
+  push: 
+    branches: [main]
 
 jobs:
   deploy:
@@ -8,4 +9,4 @@ jobs:
 
     steps:
       - name: code checkout from repo
-        run: action/checkout@4
+        uses: actions/checkout@v4
